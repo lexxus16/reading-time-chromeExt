@@ -4,16 +4,20 @@
     "version": "1.0",
     "description": "Add the reading time to Chrome Extension documentation articles",
   
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons.png"
+    },
     "content_scripts": [
         {
-          "js": ["scripts/content.js", "scripts/contentTribune.js"],
-          "matches": [
-            "https://developer.chrome.com/docs/extensions/*",
-            "https://developer.chrome.com/docs/webstore/*",
-            "https://developer.chrome.com/docs/devtools/*",
-            "https://developer.chrome.com/docs/workbox/*",
-            "https://en.wikipedia.org/wiki/*"
-          ]
+            "js": ["scripts/content.js", "scripts/contentTribune.js"],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*",
+                "https://developer.chrome.com/docs/devtools/*",
+                "https://developer.chrome.com/docs/workbox/*",
+                "https://en.wikipedia.org/wiki/*"
+            ]
         }
     ]
 }
