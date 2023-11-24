@@ -6,13 +6,14 @@
   
     "content_scripts": [
         {
-          "js": ["scripts/content.js"],
+          "js": ["scripts/content.js", "scripts/contentTribune.js"],
           "matches": [
             "https://developer.chrome.com/docs/extensions/*",
             "https://developer.chrome.com/docs/webstore/*",
             "https://developer.chrome.com/docs/devtools/*",
-            "https://developer.chrome.com/docs/workbox/*"
+            "https://developer.chrome.com/docs/workbox/*",
+            "https://en.wikipedia.org/wiki/*"
           ]
         }
-      ]
+    ]
 }
